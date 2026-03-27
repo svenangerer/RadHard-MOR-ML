@@ -1,0 +1,22 @@
+# Python caches
+__pycache__/
+*.py[cod]
+*~
+
+# Virtual Environments
+venv/
+env/
+.env/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Project specific ignores (DO NOT COMMIT DATA OR WEIGHTS)
+data/
+models/
+results/logs/
+
+# IDE and OS files
+.vscode/
+.idea/
+.DS_Store
