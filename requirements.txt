@@ -2,6 +2,7 @@ scikit-learn
 pandas
 numpy
 matplotlib
-torch  # or tensorflow, depending on your preference
+torch  
 jupyterlab
 seaborn
+tqdm
