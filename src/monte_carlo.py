@@ -5,9 +5,9 @@ from tqdm import tqdm
 import pandas as pd
 import os
 
-from data_loader import load_and_prep_data
-from model import JetClassifierMLP
-from fault_inject import irradiate_model
+from src.data_loader import load_and_prep_data
+from src.model import JetClassifierMLP
+from src.fault_inject import irradiate_model
 
 def evaluate_model(model, test_loader, device):
     """

@@ -2,8 +2,8 @@ import torch
 import torch.nn as nn
 import torch.optim as optim
 import os
-from data_loader import load_and_prep_data
-from model import JetClassifierMLP
+from src.data_loader import load_and_prep_data
+from src.model import JetClassifierMLP
 
 def train_model(epochs=30, batch_size=1024, learning_rate=0.001):
     """
@@ -73,7 +73,7 @@ def train_model(epochs=30, batch_size=1024, learning_rate=0.001):
             print(f"Epoch [{epoch+1}/{epochs}] | Loss: {running_loss/len(train_loader):.4f} | Train Acc: {train_acc:.2f}% | Test Acc: {test_acc:.2f}%")
 
     # 6. Save the trained model weights
-    save_dir = "../models/baseline"
+    save_dir = "models/baseline"
     os.makedirs(save_dir, exist_ok=True)
     save_path = os.path.join(save_dir, "baseline_mlp.pth")
     
